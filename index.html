@@ -6,21 +6,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Product preview card component</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
     <div class="card">
       <div class="card__header">
         <picture>
-          <source media="(min-width: 960px)" srcset="./images/image-product-desktop.jpg">
+          <source media="(min-width: 750px)" srcset="./images/image-product-desktop.jpg">
           <source srcset="./images/image-product-mobile.jpg">
-          <img src="./images/image-product-desktop.jpg" alt="fragance for women">
+          <img class="card__img" src="./images/image-product-desktop.jpg" alt="fragance for women">
         </picture>  
       </div>
       <div class="card__content text">
         <div class="card__text-container">
-          <p class="card__subtitle text">Perfume</p>
-          <h1 class="card__title text">Gabrielle Essence Eau De Parfum</h1>
+          <p class="text text--subtitle">Perfume</p>
+          <h1 class="text text--title">Gabrielle Essence Eau De Parfum</h1>
           <p class="text">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
         </div>
         <div class="card__pricing">
@@ -32,8 +36,8 @@
     </div>
   </main>
   <div class="attribution">
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
-    <p>Coded by <a href="https://github.com/Manny-Munoz">#Manny-munoz</a>.</p>
+    <p class="text">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p class="text">Coded by <a href="https://github.com/Manny-Munoz">#Manny-munoz</a>.</p>
   </div>
 </body>
 </html>

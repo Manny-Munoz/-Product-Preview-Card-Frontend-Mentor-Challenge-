@@ -1,0 +1,120 @@
+:root{
+  --bg-color: hsl(30deg, 38%, 92%);
+  --first-color: hsl(228deg, 12%, 48%);
+  --accent-color: hsl(212, 21%, 14%);
+  --secondary-color: hsl(158deg, 36%, 37%);
+}
+
+html {box-sizing: border-box; font-size: 14px}
+
+*, *::after, *::before { box-sizing: inherit;}
+
+body{
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+main{
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(500px, 80vw), min-content));
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+source{
+  height: 0px;
+}
+
+.card__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.text{
+  color: var(--first-color);
+  text-align: left;
+  margin: 0.3rem;
+}
+
+.text--title{
+  color: var(--accent-color);
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem ;
+}
+
+.text--subtitle{
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 750px){
+  .card{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card__pricing{
+  display: flex;
+  margin-top: 1rem;
+  gap: 0.6rem;
+  align-items:center;
+}
+
+.card__price{
+  color: var(--secondary-color);
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+}
+
+.card__price--original{
+  color: var(--first-color);
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+
+.card__button{
+  max-width: 100vw;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: filter 0.3s;
+}
+
+@media (hover:hover){
+  .card__button:hover{
+    filter: brightness(75%)
+  }
+}
+
+.attribution{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: .8rem;
+}
