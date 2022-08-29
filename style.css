@@ -52,7 +52,7 @@ source{
 .text--title{
   color: var(--accent-color);
   font-family: 'Fraunces', serif;
-  font-size: 1.5rem ;
+  font-size: 2.1rem ;
 }
 
 .text--subtitle{
@@ -117,4 +117,8 @@ source{
   flex-wrap: wrap;
   justify-content: center;
   font-size: .8rem;
+}
+
+.attribution__link{
+  color: var(--secondary-color)
 }
