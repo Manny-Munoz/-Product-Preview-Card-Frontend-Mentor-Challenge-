@@ -46,18 +46,22 @@ source{
 .text{
   color: var(--first-color);
   text-align: left;
-  margin: 0.3rem;
+  margin-left: 0.3rem;
+  margin-top: 1rem;
+  line-height:1.5rem;
 }
 
 .text--title{
   color: var(--accent-color);
   font-family: 'Fraunces', serif;
   font-size: 2.1rem ;
+  line-height: 1.7rem;
 }
 
 .text--subtitle{
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  font-size: 0.8rem;
 }
 
 .card{
