@@ -15,12 +15,12 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Screenshot
 
-![](./)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [solution url]()
-- Live Site URL: [live url]()
+- Solution URL: []()
+- Live Site URL: [manny-munoz.github.io/Product-Preview-Card-Frontend-Mentor-Challenge](https://manny-munoz.github.io/Product-Preview-Card-Frontend-Mentor-Challenge/)
 
 ## My process
 
@@ -32,6 +32,21 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - CSS Grid
 - Mobile-first workflow
 
+
+### What I Learned
+
+I learned that if a hover it's needed to add, it can be add a media query `hover` to make sure that it will only be shown if and only the device where it is displaying does have a mouse.
+```css
+@media (hover:hover){
+  .card__button:hover{
+    filter: brightness(75%)
+  }
+}
+```
+
+### Useful resources
+
+- [Hover media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover) - This helps me to understand the hover media query feature
 
 ## Author
 
